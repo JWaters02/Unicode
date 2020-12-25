@@ -22,7 +22,9 @@ def solution(line):
         else:
             pass
         print(direction, yDistance, xDistance)
-    
+    return getMoves(xDistance, yDistance, direction)
+
+def getMoves(xDistance, yDistance, direction):
     # Now work out path from those coords back to 0,0
     numMoves = 0
     while xDistance != 0:
